@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Indian City - Open World 3D</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loading">
+        <div class="loader"></div>
+        <h1>INDIAN CITY</h1>
+        <p>Building the open world...</p>
+    </div>
+
+    <!-- Game HUD -->
+    <div id="hud">
+
+        <div class="brand">
+            <span class="brand-dot"></span>
+
+            <div>
+                <b>INDIAN CITY</b>
+                <small>OPEN WORLD • 3D</small>
+            </div>
+        </div>
+
+        <div class="stats">
+
+            <div>
+                <small>VEHICLE</small>
+                <b id="vehicleName">ON FOOT</b>
+            </div>
+
+            <div>
+                <small>SPEED</small>
+                <b><span id="speed">0</span> km/h</b>
+            </div>
+
+            <div>
+                <small>WANTED</small>
+                <b id="wanted">☆☆☆☆☆</b>
+            </div>
+
+        </div>
+
+        <div id="mission">
+            Explore the city. Find a vehicle.
+        </div>
+
+    </div>
+
+    <!-- Center Crosshair -->
+    <div id="crosshair"></div>
+
+    <!-- Notifications -->
+    <div id="toast"></div>
+
+    <!-- Police Alert -->
+    <div id="policeAlert">
+        🚨 WANTED — POLICE ARE CHASING YOU
+    </div>
+
+    <!-- Keyboard Controls -->
+    <div id="help">
+
+        <div class="help-title">
+            CONTROLS
+            <button id="helpToggle">−</button>
+        </div>
+
+        <div id="helpContent">
+            <p><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> Move / Drive</p>
+            <p><kbd>↑</kbd><kbd>←</kbd><kbd>↓</kbd><kbd>→</kbd> Drive</p>
+            <p><kbd>SPACE</kbd> Handbrake</p>
+            <p><kbd>E</kbd> Enter / Steal / Exit</p>
+            <p><kbd>R</kbd> Reset Position</p>
+
+            <p class="hint">
+                Steal an NPC car to trigger a police chase.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Mobile Controls -->
+    <div id="mobileControls">
+
+        <div class="dpad">
+
+            <button data-key="w">▲</button>
+
+            <div>
+                <button data-key="a">◀</button>
+                <button data-key="s">▼</button>
+                <button data-key="d">▶</button>
+            </div>
+
+        </div>
+
+        <div class="actions">
+
+            <button id="mobileE">
+                ENTER<br>
+                <small>E</small>
+            </button>
+
+            <button data-key=" ">
+                BRAKE<br>
+                <small>SPACE</small>
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="vignette"></div>
+
+    <!-- Three.js 3D Game Engine -->
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
