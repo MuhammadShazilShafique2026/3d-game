@@ -1,0 +1,99 @@
+
+/* RESPONSIVE GAME LAYOUT */
+
+/* Laptop and desktop */
+@media screen and (min-width: 1200px) {
+    #hud {
+        padding: 24px 30px;
+    }
+
+    #help {
+        width: 260px;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 900px) {
+    #hud {
+        gap: 8px;
+    }
+
+    .stats > div {
+        min-width: 70px;
+        padding: 8px;
+    }
+
+    #mission {
+        max-width: 260px;
+    }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 700px) {
+    #hud {
+        padding: 12px;
+    }
+
+    #help {
+        display: none;
+    }
+
+    #mobileControls {
+        display: flex;
+    }
+
+    .stats {
+        gap: 4px;
+    }
+
+    #mission {
+        max-width: 220px;
+    }
+
+    #policeAlert {
+        max-width: 95vw;
+        white-space: normal;
+        text-align: center;
+    }
+
+    canvas {
+        touch-action: none;
+    }
+}
+
+/* Small mobile screens */
+@media screen and (max-width: 400px) {
+    .brand b {
+        font-size: 17px;
+    }
+
+    .stats > div {
+        min-width: 55px;
+    }
+
+    #mobileControls {
+        inset-inline: 8px;
+        bottom: 10px;
+    }
+}
+
+/* Landscape mobile */
+@media screen and (max-height: 500px) and (max-width: 900px) {
+    #mobileControls {
+        bottom: 7px;
+    }
+
+    .dpad button,
+    .actions button {
+        height: 38px;
+        min-width: 40px;
+    }
+
+    #mission {
+        top: 58px;
+    }
+
+    #policeAlert {
+        top: 90px;
+    }
+}
